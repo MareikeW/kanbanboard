@@ -52,6 +52,9 @@ const GlobalStyle = createGlobalStyle`
         cursor: pointer;
         font-family: 'Plus Jakarta Sans', sans-serif;
         font-weight: bold;
+        border: none;
+        font-size: 1.154rem;
+        line-height: 18.9px;
     }
 `;
 

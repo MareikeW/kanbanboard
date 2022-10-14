@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import GlobalStyle from './globalStyles';
 import Button from './components/Button';
 import DeleteBoard from './pages/DeleteBoard';
+import ListItem from './components/ListItem';
 
 function App() {
   return (
@@ -18,18 +19,28 @@ function App() {
         fontSize="13px" 
         backgroundColor="rgba(99, 95, 199, 0.1)" 
         hoverColor="rgba(99, 95, 199, 0.25)" 
-        color="#635FC7" />
+        color="#635FC7" 
+        />
       <Button 
         text="Save Changes" 
-        fontSize="13px" />
+        fontSize="13px" 
+        />
       <Button 
         text="+ Add New Column" 
         fontSize="13px" 
         backgroundColor="rgba(99, 95, 199, 0.1)" 
         hoverColor="rgba(99, 95, 199, 0.25)" 
-        color="#635FC7" />
+        color="#635FC7" 
+        />
       
-      <DeleteBoard />
+      <DeleteBoard heading="Delete this board?"/>
+
+      <ul>
+        <ListItem item="Todo" />
+        <ListItem item="Todo" />
+        <ListItem item="Todo" />
+      </ul>
+      
     </Fragment>
   );
 }
